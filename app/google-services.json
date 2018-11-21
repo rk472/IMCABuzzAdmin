@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "807802131884",
+    "firebase_url": "https://imcabuzz.firebaseio.com",
+    "project_id": "imcabuzz",
+    "storage_bucket": "imcabuzz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807802131884:android:0c503022e5152012",
+        "android_client_info": {
+          "package_name": "com.swadeshiapps.imcabuzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807802131884-1qdiceu2vua3pru6vmgigdqd45ce9fou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swadeshiapps.imcabuzz",
+            "certificate_hash": "0a0a24921c5f55a18cd40b33d7d4043249d794be"
+          }
+        },
+        {
+          "client_id": "807802131884-kinnsu5b729kddlcodue9mejv1bmqrku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTGOLI05qu9JGHXIaTR59HU16IOFcCH-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807802131884-kinnsu5b729kddlcodue9mejv1bmqrku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
