@@ -5,21 +5,46 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="center_vertical"
     tools:context="com.imca.imcabuzz.MenuActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="10sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="Bowling Team"/>
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45sp"
         android:id="@+id/team1"
+        android:layout_margin="10sp"
         android:entries="@array/team"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="10sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="Batting Team"/>
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45sp"
         android:id="@+id/team2"
+        android:layout_margin="10sp"
         android:entries="@array/team"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="start"
+        android:layout_gravity="center_horizontal"
+        android:text="start match now"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle=""
+        android:background="@drawable/round_corner"
         android:onClick="start"/>
 </LinearLayout>

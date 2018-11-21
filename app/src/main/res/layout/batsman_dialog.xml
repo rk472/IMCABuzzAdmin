@@ -3,14 +3,28 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center">
-    <EditText
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter the new batsman name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:text="Add New Batsman"/>
+    <EditText
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="New Batsman Name"
         android:id="@+id/new_batsman_name"/>
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="add"
+        android:layout_height="40sp"
+        android:background="@drawable/round_corner"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="add batsman"
+        android:layout_marginBottom="20sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
         android:id="@+id/new_batsman_add"/>
 </LinearLayout>

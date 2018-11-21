@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="250sp"
     android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Run Scored"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -9,7 +18,7 @@
         android:textAlignment="center"
         android:padding="5dp"
         android:id="@+id/dialog_zero"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +26,7 @@
         android:textAlignment="center"
         android:padding="5dp"
         android:id="@+id/dialog_one"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +34,7 @@
         android:textAlignment="center"
         android:padding="5dp"
         android:id="@+id/dialog_two"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +42,7 @@
         android:textAlignment="center"
         android:padding="5dp"
         android:id="@+id/dialog_three"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,7 +50,7 @@
         android:textAlignment="center"
         android:padding="5dp"
         android:id="@+id/dialog_four"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,5 +58,5 @@
         android:textAlignment="center"
         android:padding="5dp"
         android:id="@+id/dialog_six"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
 </LinearLayout>

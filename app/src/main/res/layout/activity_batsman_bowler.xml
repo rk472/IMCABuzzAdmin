@@ -12,22 +12,29 @@
         android:layout_height="wrap_content"
         android:ems="11"
         android:id="@+id/batsman1"
-        android:hint="Batsman1"/>
+        android:hint="Batsman On Strike"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="11"
         android:id="@+id/batsman2"
-        android:hint="Batsman2"/>
+        android:layout_margin="30sp"
+        android:hint="Batsman on Non Strike end"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="11"
         android:id="@+id/bowler"
-        android:hint="bowler"/>
+        android:hint="Bowler Name"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="start match"
+        android:textColor="#fff"
+        android:paddingRight="20sp"
+        android:paddingLeft="20sp"
+        android:textSize="18sp"
+        android:background="@drawable/round_corner"
+        android:layout_margin="50sp"
         android:onClick="startMatch"/>
 </LinearLayout>

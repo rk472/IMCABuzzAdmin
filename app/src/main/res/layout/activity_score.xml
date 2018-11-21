@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="30"
+    android:weightSum="31"
     tools:context="com.imca.imcabuzz.ScoreActivity">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_weight="4"
+        android:layout_weight="3"
         android:layout_height="0dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,37 +19,49 @@
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:background="@drawable/border_shape"
                 android:layout_height="match_parent">
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="Batting"
+                    android:layout_marginRight="5sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
                     android:layout_height="wrap_content" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="Batting team"
+                    android:textAllCaps="true"
                     android:id="@+id/batting_team_name"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_margin="5sp"
-                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
                     android:layout_height="wrap_content" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:background="@drawable/border_shape"
                 android:layout_height="match_parent">
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="Bowling"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5sp"
+                    android:textAllCaps="true"
                     android:layout_height="wrap_content" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="Bowling team"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
                     android:id="@+id/bowling_team_name"
-                    android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_margin="5sp"
-                    android:textSize="19sp"
+                    android:textSize="22sp"
                     android:layout_height="wrap_content" />
             </RelativeLayout>
         </LinearLayout>
@@ -60,6 +72,7 @@
         android:layout_height="0dp">
         <RelativeLayout
             android:layout_width="match_parent"
+            android:background="@drawable/border_shape"
             android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -85,40 +98,6 @@
                     android:textSize="25sp"
                     android:text="3"
                     android:id="@+id/total_wicket"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:gravity="center"
-                android:layout_marginRight="5sp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="Over "
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="4"
-                    android:id="@+id/total_over"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="."
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="3"
-                    android:id="@+id/total_ball"
                     android:textStyle="bold"/>
             </LinearLayout>
         </RelativeLayout>
@@ -149,6 +128,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="12"
                     android:textSize="18sp"
+                    android:textAllCaps="true"
                     android:id="@+id/batsman1_name"
                     android:text="Sample Name"
                     android:layout_height="wrap_content" />
@@ -186,6 +166,7 @@
                     android:layout_weight="12"
                     android:textSize="18sp"
                     android:text="Sample Name"
+                    android:textAllCaps="true"
                     android:id="@+id/batsman2_name"
                     android:layout_height="wrap_content" />
                 <TextView
@@ -220,6 +201,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:gravity="center"
+            android:background="@drawable/border_shape"
             android:orientation="vertical"
             android:weightSum="2"
             android:layout_height="match_parent">
@@ -232,11 +214,13 @@
                     android:layout_width="wrap_content"
                     android:id="@+id/score_0"
                     android:onClick="score0"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
                     android:layout_height="match_parent">
                     <android.support.design.widget.FloatingActionButton
                         android:layout_width="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_height="match_parent" />
+                        android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -251,12 +235,12 @@
                     android:layout_width="wrap_content"
                     android:id="@+id/score_1"
                     android:onClick="score1"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="10sp"
                     android:layout_height="match_parent">
                     <android.support.design.widget.FloatingActionButton
                         android:layout_width="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_height="match_parent" />
+                        android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -269,14 +253,14 @@
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="10sp"
                     android:id="@+id/score_2"
                     android:onClick="score2"
                     android:layout_height="match_parent">
                     <android.support.design.widget.FloatingActionButton
                         android:layout_width="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_height="match_parent" />
+                        android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -289,14 +273,14 @@
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="10sp"
                     android:id="@+id/score_3"
                     android:onClick="score3"
                     android:layout_height="match_parent">
                     <android.support.design.widget.FloatingActionButton
                         android:layout_width="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_height="match_parent" />
+                        android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -309,14 +293,14 @@
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="10sp"
                     android:id="@+id/score_4"
                     android:onClick="score4"
                     android:layout_height="match_parent">
                     <android.support.design.widget.FloatingActionButton
                         android:layout_width="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_height="match_parent" />
+                        android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -329,14 +313,14 @@
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="10sp"
                     android:id="@+id/score_6"
                     android:onClick="score6"
                     android:layout_height="match_parent">
                     <android.support.design.widget.FloatingActionButton
                         android:layout_width="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_height="match_parent" />
+                        android:layout_height="wrap_content" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -355,7 +339,7 @@
                 android:layout_weight="1">
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="10sp"
                     android:id="@+id/score_nb"
                     android:onClick="scoreNB"
                     android:layout_height="match_parent">
@@ -375,7 +359,7 @@
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="10sp"
                     android:id="@+id/score_wd"
                     android:onClick="scoreWD"
                     android:layout_height="match_parent">
@@ -395,7 +379,7 @@
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="10sp"
                     android:id="@+id/score_by"
                     android:onClick="scoreBY"
                     android:layout_height="match_parent">
@@ -415,7 +399,7 @@
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="20sp"
+                    android:layout_marginLeft="10sp"
                     android:id="@+id/score_ov"
                     android:onClick="scoreOV"
                     android:layout_height="match_parent">
@@ -438,30 +422,83 @@
                     android:text="Overup"
                     android:id="@+id/over_up"
                     android:onClick="overUp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginBottom="5sp"
                     android:textColor="#fff"
                     android:padding="0sp"
                     android:textSize="14sp"
                     android:background="@drawable/round_corner"
-                    android:layout_marginLeft="20sp"
-                    android:layout_height="match_parent" />
+                    android:layout_marginLeft="10sp"
+                    android:layout_height="45sp" />
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="bowler name"
-        android:id="@+id/bowler_name"/>
+        android:weightSum="10"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="19sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="Bowler : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:text="bowler name real"
+                android:textAllCaps="true"
+                android:id="@+id/bowler_name"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Over "
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="4"
+                android:id="@+id/total_over"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="."
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="3"
+                android:id="@+id/total_ball"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_weight="6"
+        android:layout_weight="7"
         android:layout_height="0dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:gravity="center"
+            android:background="@drawable/border_shape"
             android:layout_height="match_parent">
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
